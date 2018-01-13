@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  script.
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'sheet',
+      'col-1': 'col-1',
+      'col-2': 'col-2'
+    });
